@@ -1,12 +1,7 @@
-# hello-world-imba
+# Just a Hello World App in Imba
 
-Tiny template for testing out Imba
-
-## Getting started
 
 ```bash
-# install dependencies
-npm install
-# start webpack-dev-server and compiler
-npm run dev
+yarn
+yarn run dev
 ```
