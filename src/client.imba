@@ -1,26 +1,16 @@
-
-var store = {
-	title: ""
-	items: [
-		{title: "git clone hello-world-imba"}
-		{title: "npm install"}
-		{title: "npm run dev"}
-		{title: "play around"}
-	]
-}
-
 tag App
-	def addItem
-		data:items.push(title: data:title)
-		data:title = ""
-		
 	def render
-		<self.vbox>
+		<self>
 			<header>
-				<input[data:title] placeholder="New..." :keyup.enter.addItem>
-				<button :tap.addItem> 'Add item'
-			<ul> for item in data:items
-				<li> item:title
+				<h1> "Hello World!"
+			<main>
+				<h2> "🌍🌎🌏"
+				<p> "A simple example page built in Imba"
+				<p 
+				css:background="chartreuse" 
+				css:color="black" 
+				css:padding="25px"
+				css:text-align="center">
+					"This is amazing right"
 
-
-Imba.mount <App[store]>
+Imba.mount <App>
